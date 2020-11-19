@@ -1,0 +1,99 @@
+body {
+  background-color: white;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 200px;
+  width: 250px;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border: black;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 0;
+  color: white;
+  font-weight: bolder;
+}
+
+#navbar ol {
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90%;
+}
+
+#navbar li {
+  font-size: 1.1rem;
+  text-decoration: none;
+  list-style: none;
+  border-top: solid;
+  position: relative;
+  color: white;
+}
+
+#navbar a {
+  display: block;
+  margin: 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-family: "Mali", cursive;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 250px;
+  padding: 30px;
+}
+
+header {
+  font-size: 1.75rem;
+  font-weight: bolder;
+  font-family: "Mali", cursive;
+}
+
+p {
+  padding: 10px 0 10px 15px;
+  font-family: "Itim", cursive;
+}
+
+code {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+code ol {
+  background-color: rgb(245, 222, 222);
+  width: 70%;
+  margin-left: 20px;
+}
+
+@media (max-width: 500px) {
+  #navbar ol {
+    height: 400px;
+  }
+  #navbar {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 450px;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-top: 450px;
+    margin-left: 0;
+  }
+}

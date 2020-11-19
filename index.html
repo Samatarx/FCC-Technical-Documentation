@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Documentation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Mali:wght@200&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav id="navbar">
+        <header>JavaScript Arrays</header>
+        <ul>
+            <li><a href="#What_is_an_Array_in_JavaScript?" class="nav-link">What is an Array in JavaScript?</a></li>
+            <li><a href="#Description" class="nav-link">Description</a></li>
+            <li><a href="#Array_Operations" class="nav-link">Array Operations</a></li>
+            <li><a href="#Create_an_Array" class="nav-link">Create an Array</a></li>
+            <li><a href="#Access_an_Array_item_using_the_index_position" class="nav-link">Access an Array item using the
+                    index position</a></li>
+            <li><a href="#Add_an_item_to_the_end_of_an_Array" class="nav-link">Add an item to the end of an Array</a>
+            </li>
+            <li><a href="#Remove_an_item_from_the_end_of_an_Array" class="nav-link">Remove an item from the end of an
+                    Array</a></li>
+            <li><a href="#Remove_an_item_from_the_beginning_of_an_Array" class="nav-link">Remove an item from the
+                    beginning of an Array</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="What_is_an_Array_in_JavaScript?">
+            <header>What is an Array in JavaScript?</header>
+            <article>
+                <p>
+                    The JavaScript Array class is a global object that is used in the construction of arrays; which are
+                    high-level, list-like objects.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Description">
+            <header>Description</header>
+            <article>
+                <p>
+                    Arrays are list-like objects whose prototype has methods to perform traversal and mutation
+                    operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since
+                    an array's length can change at any time, and data can be stored at non-contiguous locations in the
+                    array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses
+                    to use them. In general, these are convenient characteristics; but if these features are not
+                    desirable for your particular use, you might consider using typed arrays.
+                </p>
+                <p>
+                    Arrays cannot use strings as element indexes (as in an associative array) but must use integers.
+                    Setting or accessing via non-integers using bracket notation (or dot notation) will not set or
+                    retrieve an element from the array list itself, but will set or access a variable associated with
+                    that array's object property collection. The array's object properties and list of array elements
+                    are separate, and the array's traversal and mutation operations cannot be applied to these named
+                    properties.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Array_Operations">
+            <header>Array Operations</header>
+            <article>
+                <p>Arrays can be modified and manipulated using several different methods within JavaScript, in this
+                    section we will go through a few of the basic methods</p>
+            </article>
+        </section>
+        <section class="main-section" id="Create_an_Array">
+            <header>Create an Array</header>
+            <code>
+            <ol>
+                <li>let fruits = ['Apple', 'Banana']</li>
+                <li> </li>
+                <li>console.log(fruits.length)</li>
+                <li>// 2</li>
+            </ol>
+        </code>
+            <p>A fruits Array was created containing Apples and Bananas</p>
+        </section>
+        <section class="main-section" id="Access_an_Array_item_using_the_index_position">
+            <header>Access an Array item using the index position</header>
+            <code>
+            <ol>
+                <li>let first = fruits[0]</li>
+                <li>// Apple</li>
+                <li> </li>
+                <li>let last = fruits[fruits.length - 1]</li>
+                <li>// Banana</li>
+            </ol>
+        </code>
+            <p>The position of Apple in the Array is 0, whereas, the position for Banana is 1</p>
+            <p>Indexes for Arrays start at 0 rather than 1</p>
+        </section>
+        <section class="main-section" id="Add_an_item_to_the_end_of_an_Array">
+            <header>Add an item to the end of an Array</header>
+            <code>
+            <ol>
+                <li>let newLength = fruits.push('Orange')</li>
+                <li>// ["Apple", "Banana", "Orange"]</li>
+            </ol>
+        </code>
+            <p>The push method was used to add Oranges to the Array</p>
+        </section>
+        <section class="main-section" id="Remove_an_item_from_the_end_of_an_Array">
+            <header>Remove an item from the end of an Array</header>
+            <code>
+            <ol>
+                <li>let last = fruits.pop() // remove Orange (from the end)</li>
+                <li>// ["Apple", "Banana"]</li>
+            </ol>
+        </code>
+            <p>The pop method was used to remove Oranges from the Array</p>
+        </section>
+        <section class="main-section" id="Remove_an_item_from_the_beginning_of_an_Array">
+            <header>Remove an item from the beginning of an Array</header>
+            <code>
+                <ol>
+                    <li>let first = fruits.shift() // remove Apple from the front</li>
+                    <li>// ["Banana"]</li>
+                </ol>
+            </code>
+            <p>The shift method was used to remove Apple from the beginning of the Array</p>
+        </section>
+    </main>
+
     <script src="app.js"></script>
 </body>
+
 </html>
