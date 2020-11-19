@@ -15,14 +15,15 @@ body {
   padding: 0;
   color: white;
   font-weight: bolder;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #navbar ol {
   width: 100%;
   position: relative;
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 90%;
+
+  height: 50%;
 }
 
 #navbar li {
